@@ -6,6 +6,11 @@ const babel = require('gulp-babel');
 
 const browserSync = require('browser-sync').create();
 
+function handleError(error) {
+  console.log(error.toString());
+  this.emit('end');
+}
+
 // Compile pug files into HTML
 function pugHtml() {
   return src('src/pug/pages/*.pug')
@@ -27,9 +32,10 @@ function scripts() {
     .pipe(
       babel({
         presets: ['@babel/env'],
-      })
+      }).on('error', handleError)
     )
-    .pipe(dest('dist'));
+    .pipe(dest('dist'))
+    .pipe(browserSync.stream());
 }
 
 // Compile sass files into CSS
@@ -62,7 +68,7 @@ function watchAndServe() {
   watch('src/pug/pages/*.pug', pugHtml);
   // watch('src/**/*.html', html);
   watch('src/assets/**/*', assets);
-  watch('src/js/**.*', scripts);
+  watch('src/js/**/*.js', scripts);
   watch('dist/*.html').on('change', browserSync.reload);
 }
 
