@@ -1,0 +1,39 @@
+.main-header {
+  background-color: white;
+}
+
+.nav-menu-container {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1400px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.txt-link {
+  color: #292929;
+  padding: 30px 0 31px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.txt-link:hover {
+  box-shadow: inset 0px -2px 0 0 green;
+}
+
+.item-logo {
+  margin-right: 90px;
+}
+
+.item-link {
+  margin-right: 72px;
+}
