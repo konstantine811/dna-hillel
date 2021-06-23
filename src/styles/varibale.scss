@@ -1,1 +1,5 @@
-$black: #000000;
+$dna-row-width: 150px;
+$dna-diameter: 20px;
+$dna-translate: $dna-row-width - $dna-diameter;
+$dna-scale: 0.6;
+$dna-timing: ease-in-out;

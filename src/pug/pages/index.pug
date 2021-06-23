@@ -1,23 +1,17 @@
 extends ../layouts/common-layout.pug
 block vars
-  -var title = 'Main page'
-  -var description = 'This is main page'
+  -var title = 'Main page';
+  -var description = 'This is main page';
+  -var n = 0;
 block styles
   link(rel="stylesheet" href="./css/main.css")
 block content
-  include ../mixins/header-mixin.pug
-  -var linksData = [{title: 'Why Alivio', url: 'alivio'}, {title: 'Solutions'}, {title: 'Community'}, {title: 'Pricing'}]
-  header.main-header
-    .container.container-flex
-      nav.nav-menu
-        ul.nav-menu-container
-          li.item-logo
-            a(href="#")
-              object(data="./assets/svg/logo.svg" type="image/svg+xml")
-          each link in linksData
-            +itemLink(link.title, link.url)
-      .nav-menu-auth
-        button.btn Sign-in
-        button.btn Start Trial
+  h1.txt--center DNA molecule
+  .dna-wrap
+    for n in Array(14)
+      .dna-row
+        .circle.circle-1
+        .circle.circle-2
+        .line
 block scripts
   script(src="./index.js")

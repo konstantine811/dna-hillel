@@ -26,42 +26,255 @@ button {
   font-family: 'Lato', sans-serif;
 }
 
-.main-header {
-  background-color: white;
+body,
+html {
+  margin: 0;
+  height: 100%;
+  background-color: blueviolet;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-.nav-menu-container {
-  display: flex;
-  align-items: center;
+.txt--center {
+  text-align: center;
 }
 
-.container {
-  max-width: 1400px;
-  padding: 0 15px;
+.dna-wrap {
+  max-width: 150px;
+  margin: 100px auto 0;
+  animation: rotate_anim 20s 0.2s forwards linear infinite;
+}
+
+.dna-row {
+  width: 150px;
+  height: 50px;
+  position: relative;
   margin: 0 auto;
 }
 
-.container-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.line {
+  position: absolute;
+  height: 2px;
+  background-color: #fff;
+  width: 98%;
+  left: 1%;
+  top: 8px;
+  animation: line_anim 1s forwards linear infinite;
 }
 
-.txt-link {
-  color: #292929;
-  padding: 30px 0 31px;
+.circle {
   display: inline-block;
-  transition: all 0.3s ease;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 100;
+  top: 0;
 }
 
-.txt-link:hover {
-  box-shadow: inset 0px -2px 0 0 green;
+.circle-1 {
+  left: 0;
+  background-color: white;
+  animation: circle_anim_1 2s forwards ease-in-out infinite;
 }
 
-.item-logo {
-  margin-right: 90px;
+.circle-2 {
+  right: 0;
+  background-color: red;
+  animation: circle_anim_2 2s forwards ease-in-out infinite;
 }
 
-.item-link {
-  margin-right: 72px;
+.dna-row:nth-child(2) .circle-1 {
+  animation-delay: 0.4s;
+}
+
+.dna-row:nth-child(2) .circle-2 {
+  animation-delay: 0.4s;
+}
+
+.dna-row:nth-child(2) .line {
+  animation-delay: 0.4s;
+}
+
+.dna-row:nth-child(3) .circle-1 {
+  animation-delay: 0.6s;
+}
+
+.dna-row:nth-child(3) .circle-2 {
+  animation-delay: 0.6s;
+}
+
+.dna-row:nth-child(3) .line {
+  animation-delay: 0.6s;
+}
+
+.dna-row:nth-child(4) .circle-1 {
+  animation-delay: 0.8s;
+}
+
+.dna-row:nth-child(4) .circle-2 {
+  animation-delay: 0.8s;
+}
+
+.dna-row:nth-child(4) .line {
+  animation-delay: 0.8s;
+}
+
+.dna-row:nth-child(5) .circle-1 {
+  animation-delay: 1s;
+}
+
+.dna-row:nth-child(5) .circle-2 {
+  animation-delay: 1s;
+}
+
+.dna-row:nth-child(5) .line {
+  animation-delay: 1s;
+}
+
+.dna-row:nth-child(6) .circle-1 {
+  animation-delay: 1.2s;
+}
+
+.dna-row:nth-child(6) .circle-2 {
+  animation-delay: 1.2s;
+}
+
+.dna-row:nth-child(6) .line {
+  animation-delay: 1.2s;
+}
+
+.dna-row:nth-child(7) .circle-1 {
+  animation-delay: 1.4s;
+}
+
+.dna-row:nth-child(7) .circle-2 {
+  animation-delay: 1.4s;
+}
+
+.dna-row:nth-child(7) .line {
+  animation-delay: 1.4s;
+}
+
+.dna-row:nth-child(8) .circle-1 {
+  animation-delay: 1.6s;
+}
+
+.dna-row:nth-child(8) .circle-2 {
+  animation-delay: 1.6s;
+}
+
+.dna-row:nth-child(8) .line {
+  animation-delay: 1.6s;
+}
+
+.dna-row:nth-child(9) .circle-1 {
+  animation-delay: 1.8s;
+}
+
+.dna-row:nth-child(9) .circle-2 {
+  animation-delay: 1.8s;
+}
+
+.dna-row:nth-child(9) .line {
+  animation-delay: 1.8s;
+}
+
+.dna-row:nth-child(10) .circle-1 {
+  animation-delay: 2s;
+}
+
+.dna-row:nth-child(10) .circle-2 {
+  animation-delay: 2s;
+}
+
+.dna-row:nth-child(10) .line {
+  animation-delay: 2s;
+}
+
+.dna-row:nth-child(11) .circle-1 {
+  animation-delay: 2.2s;
+}
+
+.dna-row:nth-child(11) .circle-2 {
+  animation-delay: 2.2s;
+}
+
+.dna-row:nth-child(11) .line {
+  animation-delay: 2.2s;
+}
+
+.dna-row:nth-child(12) .circle-1 {
+  animation-delay: 2.4s;
+}
+
+.dna-row:nth-child(12) .circle-2 {
+  animation-delay: 2.4s;
+}
+
+.dna-row:nth-child(12) .line {
+  animation-delay: 2.4s;
+}
+
+.dna-row:nth-child(13) .circle-1 {
+  animation-delay: 2.6s;
+}
+
+.dna-row:nth-child(13) .circle-2 {
+  animation-delay: 2.6s;
+}
+
+.dna-row:nth-child(13) .line {
+  animation-delay: 2.6s;
+}
+
+.dna-row:nth-child(14) .circle-1 {
+  animation-delay: 2.8s;
+}
+
+.dna-row:nth-child(14) .circle-2 {
+  animation-delay: 2.8s;
+}
+
+.dna-row:nth-child(14) .line {
+  animation-delay: 2.8s;
+}
+
+@keyframes circle_anim_1 {
+  0%,
+  100% {
+    transform: translateX(0) scale(1);
+  }
+  50% {
+    transform: translateX(130px) scale(0.6);
+  }
+}
+
+@keyframes circle_anim_2 {
+  0%,
+  100% {
+    transform: translateX(0) scale(1);
+  }
+  50% {
+    transform: translateX(-130px) scale(0.6);
+  }
+}
+
+@keyframes line_anim {
+  0%,
+  100% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(0);
+  }
+}
+
+@keyframes rotate_anim {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
