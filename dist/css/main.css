@@ -26,15 +26,6 @@ button {
   font-family: 'Lato', sans-serif;
 }
 
-body,
-html {
-  margin: 0;
-  height: 100%;
-  background-color: blueviolet;
-  color: white;
-  font-family: 'Courier New', Courier, monospace;
-}
-
 .txt--center {
   text-align: center;
 }
